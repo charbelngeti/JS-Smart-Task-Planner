@@ -230,5 +230,38 @@
 .container-fluid.join .btn:hover {
   background-color: color-mix(in srgb, var(--clr-primary) 75%, black);
 }
+.container-fluid.footer {
+  background: var(--clr-surface);
+}
+.container-fluid.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: color-mix(in srgb, var(--clr-surface-light) 100%, black);
+  border: 2px solid color-mix(in srgb, var(--clr-surface-light) 90%, black);
+  width: fit-content;
+  margin-top: -4rem;
+}
+.container-fluid.footer .container h1 {
+  font-family: var(--fnt-alt);
+  color: var(--clr-text);
+}
+.container-fluid.footer .container h1 span {
+  color: var(--clr-primary);
+  display: block;
+}
+.container-fluid.footer .container img {
+  height: 150px;
+  margin-right: 1rem;
+}
+.container-fluid.footer .row {
+  border-top: 2px solid color-mix(in srgb, var(--clr-text-muted) 15%, transparent);
+}
+.container-fluid.footer .row .col img {
+  width: 250px;
+}
+.container-fluid.footer .row .col p {
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
