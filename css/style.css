@@ -63,6 +63,9 @@
   background: var(--clr-background);
   border-bottom: 4px solid var(--clr-primary);
 }
+.navbar .container-fluid {
+  flex-direction: row;
+}
 .navbar .navbar-collapse {
   float: right;
 }
@@ -79,13 +82,15 @@
   border-bottom-color: var(--clr-primary);
 }
 
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .container-fluid.landing {
   background: url("../../images/House aesthetic.png");
   background-size: cover;
   background-position: center bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .container-fluid.landing h1 {
   font-family: var(--fnt-alt);
@@ -170,6 +175,35 @@
 }
 .container-fluid.landing .server-info .btn:hover {
   background-color: color-mix(in srgb, var(--clr-secondary) 75%, black);
+}
+.container-fluid.server-ft {
+  background-color: var(--clr-background);
+}
+.container-fluid.server-ft h2 {
+  color: var(--clr-primary);
+  font-family: var(--fnt-alt);
+}
+.container-fluid.server-ft .row .col .card {
+  border-radius: 0;
+  border-color: var(--clr-primary);
+  transition: all ease 0.5s;
+  background: var(--clr-surface);
+}
+.container-fluid.server-ft .row .col .card .card-img-top {
+  height: 60px;
+}
+.container-fluid.server-ft .row .col .card .card-title {
+  font-family: var(--fnt-minecraft);
+  color: var(--clr-text);
+}
+.container-fluid.server-ft .row .col .card .card-text {
+  font-family: var(--fnt-body);
+  color: var(--clr-text);
+}
+.container-fluid.server-ft .row .col .card:hover {
+  transform: translateY(-2%);
+  border-bottom-width: 5px;
+  box-shadow: 0 10px 10px color-mix(in srgb, var(--clr-primary) 45%, transparent);
 }
 
 /*# sourceMappingURL=style.css.map */
