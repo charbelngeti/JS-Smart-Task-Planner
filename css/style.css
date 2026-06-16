@@ -15,7 +15,7 @@
   --clr-primary: hsl(120, 100%, 66%);
   --clr-primary-dark: hsl(120, 61%, 40%);
   --clr-primary-light: hsl(120, 100%, 77%);
-  --clr-secondary: #00d9ff;
+  --clr-secondary: hsl(189, 100%, 50%);
   --clr-accent: #ffaa00;
   --clr-grass: #54ff54;
   --clr-dirt: #8b5a2b;
@@ -69,6 +69,7 @@
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-family: var(--fnt-alt);
   border-bottom: 4px solid transparent;
+  color: var(--clr-text);
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
   background: var(--clr-primary);
@@ -78,40 +79,97 @@
   border-bottom-color: var(--clr-primary);
 }
 
-.container.landing {
+.container-fluid.landing {
   background: url("../../images/House aesthetic.png");
   background-size: cover;
   background-position: center bottom;
-  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.container.landing h1 {
-  font-family: var(--fnt-minecraft);
+.container-fluid.landing h1 {
+  font-family: var(--fnt-alt);
   color: var(--clr-text-light);
   text-shadow: 5px 5px 10px #000000;
 }
-.container.landing h1 span {
+.container-fluid.landing h1 span {
   color: var(--clr-primary);
 }
-.container.landing p {
+.container-fluid.landing p {
   color: var(--clr-text-light);
   font-family: var(--fnt-minecraft);
   text-shadow: 5px 5px 10px #000000;
 }
-.container.landing p span {
+.container-fluid.landing p span {
   color: var(--clr-primary);
 }
-.container.landing .btn-primary {
+.container-fluid.landing .btn {
   background: var(--clr-primary);
-  border: 3px solid var(--clr-text);
+  border: 3px solid color-mix(in srgb, var(--clr-primary-dark) 50%, black);
   box-shadow: inset 5px -5px 1px var(--clr-primary-dark) !important;
   font-family: var(--fnt-alt);
   border-radius: 0;
 }
-.container.landing .btn-primary:hover {
+.container-fluid.landing .btn:hover {
   background: var(--clr-primary-dark);
+}
+.container-fluid.landing .server-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: color-mix(in srgb, var(--clr-background) 50%, transparent) !important;
+  border-color: color-mix(in srgb, var(--clr-background) 50%, transparent);
+  border-style: solid;
+  border-width: 2px;
+}
+.container-fluid.landing .server-info h3 {
+  font-family: var(--fnt-minecraft);
+  color: var(--clr-text);
+}
+.container-fluid.landing .server-info .card {
+  border-radius: 0;
+  border-width: 2px;
+  border-color: var(--clr-border);
+}
+.container-fluid.landing .server-info .card .card-body .card-text,
+.container-fluid.landing .server-info .card .card-body .card-link {
+  font-family: var(--fnt-body);
+  color: var(--clr-text);
+  display: block;
+}
+.container-fluid.landing .server-info .card .card-body .card-text .link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container-fluid.landing .server-info .card .card-body .card-link {
+  color: var(--clr-secondary);
+}
+.container-fluid.landing .server-info .row .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 0 0 0 3px;
+  border-color: var(--clr-primary);
+}
+.container-fluid.landing .server-info .row .card .card-img-top {
+  height: 50px;
+  width: 50px;
+  object-fit: container;
+}
+.container-fluid.landing .server-info .row .card .card-body .card-text,
+.container-fluid.landing .server-info .row .card .card-body .card-title {
+  font-family: var(--fnt-minecraft);
+}
+.container-fluid.landing .server-info .row .card .card-body .card-text {
+  color: var(--clr-text-muted);
+}
+.container-fluid.landing .server-info .btn {
+  background: var(--clr-secondary);
+  border: 3px solid color-mix(in srgb, var(--clr-secondary) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-secondary) 75%, black) !important;
+}
+.container-fluid.landing .server-info .btn:hover {
+  background-color: color-mix(in srgb, var(--clr-secondary) 75%, black);
 }
 
 /*# sourceMappingURL=style.css.map */
