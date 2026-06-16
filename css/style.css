@@ -1,3 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Minecraft";
+  src: url("../src/fonts/Minecrafter.Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft Alt";
+  src: url("../src/fonts/Minecrafter.Alt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+:root {
+  --clr-accent: #ffaa00;
+  --clr-grass: #54ff54;
+  --clr-dirt: #8b5a2b;
+  --clr-stone: #7d7d7d;
+  --clr-obsidian: #12001f;
+  --clr-lava: #ff4500;
+  --clr-redstone: #b00000;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-background: #f4f1de;
+  --clr-surface: #ffffff;
+  --clr-surface-light: #eeeeee;
+  --clr-text: #1a1a1a;
+  --clr-text-muted: #666666;
+  --clr-border: #d0d0d0;
+  --clr-primary: #32cc32;
+  --clr-secondary: #0099cc;
+  --clr-card-shadow: rgba(0, 0, 0, 0.15);
+  --fnt-minecraft: Minecraft;
+  --fnt-alt: Minecrafter Alt;
+  --fnt-body: Roboto Mono;
+}
 
+.dark {
+  --clr-background: #101010;
+  --clr-surface: #1c1c1c;
+  --clr-surface-light: #282828;
+  --clr-text: #f5f5f5;
+  --clr-text-muted: #b5b5b5;
+  --clr-border: #3a3a3a;
+  --clr-primary: #54ff54;
+  --clr-secondary: #00d9ff;
+  --clr-card-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.navbar {
+  background: var(--clr-background);
+}
+.navbar .navbar-collapse {
+  float: right;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: var(--fnt-minecraft);
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 4px solid var(--clr-primary);
+}
 
 /*# sourceMappingURL=style.css.map */
