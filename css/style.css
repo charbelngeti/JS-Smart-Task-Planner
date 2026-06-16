@@ -6,15 +6,15 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Minecraft Alt";
+  font-family: "Alt";
   src: url("../src/fonts/Minecrafter.Alt.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 :root {
-  --clr-primary: #54ff54;
-  --clr-primary-dark: #32cc32;
-  --clr-primary-light: #8aff8a;
+  --clr-primary: hsl(120, 100%, 66%);
+  --clr-primary-dark: hsl(120, 61%, 40%);
+  --clr-primary-light: hsl(120, 100%, 77%);
   --clr-secondary: #00d9ff;
   --clr-accent: #ffaa00;
   --clr-grass: #54ff54;
@@ -30,12 +30,14 @@
   --clr-surface-light: #eeeeee;
   --clr-text: #1a1a1a;
   --clr-text-muted: #666666;
+  --clr-text-light: #f5f5f5;
+  --clr-text-dark: #1a1a1a;
   --clr-border: #d0d0d0;
   --clr-primary: #32cc32;
   --clr-secondary: #0099cc;
   --clr-card-shadow: rgba(0, 0, 0, 0.15);
   --fnt-minecraft: Minecraft;
-  --fnt-alt: Minecrafter Alt;
+  --fnt-alt: Alt;
   --fnt-body: Roboto Mono;
 }
 
@@ -45,6 +47,8 @@
   --clr-surface-light: #282828;
   --clr-text: #f5f5f5;
   --clr-text-muted: #b5b5b5;
+  --clr-text-light: #f5f5f5;
+  --clr-text-dark: #1a1a1a;
   --clr-border: #3a3a3a;
   --clr-primary: #54ff54;
   --clr-secondary: #00d9ff;
@@ -63,9 +67,8 @@
   float: right;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-family: var(--fnt-minecraft);
+  font-family: var(--fnt-alt);
   border-bottom: 4px solid transparent;
-  color: var(--clr-text-muted);
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
   background: var(--clr-primary);
@@ -73,7 +76,42 @@
 }
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   border-bottom-color: var(--clr-primary);
-  color: var(--clr-text);
+}
+
+.container.landing {
+  background: url("../../images/House aesthetic.png");
+  background-size: cover;
+  background-position: center bottom;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container.landing h1 {
+  font-family: var(--fnt-minecraft);
+  color: var(--clr-text-light);
+  text-shadow: 5px 5px 10px #000000;
+}
+.container.landing h1 span {
+  color: var(--clr-primary);
+}
+.container.landing p {
+  color: var(--clr-text-light);
+  font-family: var(--fnt-minecraft);
+  text-shadow: 5px 5px 10px #000000;
+}
+.container.landing p span {
+  color: var(--clr-primary);
+}
+.container.landing .btn-primary {
+  background: var(--clr-primary);
+  border: 3px solid var(--clr-text);
+  box-shadow: inset 5px -5px 1px var(--clr-primary-dark) !important;
+  font-family: var(--fnt-alt);
+  border-radius: 0;
+}
+.container.landing .btn-primary:hover {
+  background: var(--clr-primary-dark);
 }
 
 /*# sourceMappingURL=style.css.map */
