@@ -263,5 +263,49 @@
 .container-fluid.footer .row .col p {
   margin: 0;
 }
+.container-fluid.about {
+  background: var(--clr-background);
+}
+.container-fluid.about .hero {
+  background: url("../../images/Group hurdle.png");
+  background-size: cover;
+  background-position: center 35%;
+}
+.container-fluid.about .hero .background {
+  background: #000;
+  opacity: 0.5;
+  height: 100%;
+  z-index: 0;
+}
+.container-fluid.about .hero h1 {
+  font-family: var(--fnt-alt);
+  color: var(--clr-text-light);
+  z-index: 1;
+}
+.container-fluid.about .hero h1 span {
+  color: var(--clr-primary);
+}
+.container-fluid.about .about-section h2 {
+  font-family: var(--fnt-minecraft);
+  color: var(--clr-text);
+}
+.container-fluid.about .about-section .line {
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+.container-fluid.about .about-section p {
+  font-family: var(--fnt-body);
+}
+.container-fluid.about .about-section .row .col .card .card-img-top {
+  height: 70px;
+  width: fit-content;
+}
+.container-fluid.about .about-section .row .col .card .card-img-top img {
+  height: 100%;
+  width: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
