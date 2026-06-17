@@ -299,6 +299,13 @@
 .container-fluid.about .about-section p {
   font-family: var(--fnt-body);
 }
+.container-fluid.about .about-section .row .col .card {
+  transition: all 0.5s ease;
+}
+.container-fluid.about .about-section .row .col .card:hover {
+  transform: translateY(-2%);
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--clr-primary) 55%, transparent);
+}
 .container-fluid.about .about-section .row .col .card .card-img-top {
   height: 70px;
   width: fit-content;
@@ -306,6 +313,30 @@
 .container-fluid.about .about-section .row .col .card .card-img-top img {
   height: 100%;
   width: auto;
+}
+.container-fluid.about .about-section .server-phil {
+  background: color-mix(in srgb, var(--clr-background) 97%, black);
+}
+.container-fluid.about .about-section .mission-table {
+  border: 3px solid var(--clr-text-muted);
+}
+.container-fluid.about .about-section .mission-table .list-group-item {
+  background: color-mix(in srgb, var(--clr-background) 97%, black);
+  border-bottom: 1px solid var(--clr-text-muted);
+  border-left: 1px solid var(--clr-text-muted);
+}
+.container-fluid.about .about-section .list-card {
+  border-radius: 0;
+  border-width: 3px;
+  border-bottom-width: 1px;
+  border-color: var(--clr-text-muted);
+}
+.container-fluid.about .about-section .list-card .list-group .list-group-item {
+  background: color-mix(in srgb, var(--clr-background) 97%, black);
+  border-radius: 0;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: var(--clr-text-muted);
 }
 
 /*# sourceMappingURL=style.css.map */
