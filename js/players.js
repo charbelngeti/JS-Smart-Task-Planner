@@ -1,24 +1,28 @@
 let players = [];
+let filteredPlayers = [];
 
 fetch("../src/data/players.json")
   .then((response) => response.json())
   .then((data) => {
     players = data;
+    filteredPlayers = players;
   })
   .then(() => {
     renderPlayerCards(players);
   });
 
+function filterPlayerList() {}
+
 function renderPlayerCards(data) {
   const container = document.querySelector(".player-data .row");
   container.innerHTML = "";
 
-  players.forEach((player) => {
+  data.forEach((player) => {
     container.innerHTML += `
       <div class="col">
         <div class="card p-2 h-100" onclick="showPlayer(${player.id})">
           <img
-            src="../images/players/src/${player.skin}"
+            src="../images/players/${player.skin}"
             class="card-img-top mx-auto"
           />
           <div class="card-body">
@@ -78,3 +82,31 @@ function showPlayer(id) {
   const modal = new bootstrap.Modal(document.getElementById("playerModal"));
   modal.show();
 }
+
+const searchBox = document.getElementById("searchPlayer");
+const sortBox = document.getElementById("sortBox");
+
+function filterPlayerList() {
+  let searchValue = searchBox.value.toLowerCase();
+
+  let results = players.filter((player) =>
+    player.username.toLowerCase().includes(searchValue),
+  );
+
+  console.log(results);
+
+  let sortValue = sortBox.value;
+
+  if (sortValue === "ascending") {
+    results.sort((a, b) => a.username.localeCompare(b.username));
+  }
+
+  if (sortValue === "descending") {
+    results.sort((a, b) => b.username.localeCompare(a.username));
+  }
+
+  renderPlayerCards(results);
+}
+
+searchBox.addEventListener("input", filterPlayerList);
+sortBox.addEventListener("change", filterPlayerList);

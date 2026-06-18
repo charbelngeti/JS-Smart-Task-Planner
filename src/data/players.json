@@ -5,7 +5,7 @@
     "role": "Architect",
     "shortDesc": "A block architect who turns dirt, stone, and questionable amounts of free time into legendary builds.",
     "specialty": "Building massive structures",
-    "skin": "charbel.png",
+    "skin": "steve face.jpg",
 
     "stats": {
       "blocksPlaced": 68855,
@@ -30,7 +30,7 @@
     "role": "Tamer",
     "shortDesc": "An animal whisperer who can't resist bringing a home a new animal. Parrots, dogs, cats, fish, horses, donkeys, you name it!",
     "specialty": "Animal taming and house decoration",
-    "skin": "wilson.png",
+    "skin": "steve face.jpg",
 
     "stats": {
       "blocksPlaced": 4697,
