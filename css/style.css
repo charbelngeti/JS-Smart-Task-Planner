@@ -342,10 +342,40 @@
   border-width: 3px;
   border-color: color-mix(in srgb, var(--clr-background) 85%, black);
 }
+.container-fluid.players .player-section .search-box input:focus {
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--clr-primary) 55%, transparent);
+}
 .container-fluid.players .player-section .search-box select {
   border-radius: 0;
   border-width: 3px;
   border-color: color-mix(in srgb, var(--clr-background) 85%, black);
+}
+.container-fluid.players .player-section .search-box select:focus {
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--clr-primary) 55%, transparent);
+}
+.container-fluid.players .player-section .player-data .card {
+  transition: all 0.5s ease-out;
+  border-radius: 0;
+  border-width: 3px;
+}
+.container-fluid.players .player-section .player-data .card:hover {
+  transform: translatey(-2%);
+  box-shadow: 0 5px 20px var(--clr-primary);
+}
+.container-fluid.players .player-section .player-data .card .card-img-top {
+  height: 150px;
+  width: max-content;
+  border-radius: 0;
+}
+.container-fluid.players .player-section .player-data .card .card-title {
+  font-family: var(--fnt-body);
+}
+.container-fluid.players .player-section .player-data .card .card-footer {
+  background: none;
+}
+.container-fluid.players .player-section .player-data .card .card-footer .card-link {
+  text-decoration: none;
+  color: var(--clr-primary);
 }
 
 /*# sourceMappingURL=style.css.map */

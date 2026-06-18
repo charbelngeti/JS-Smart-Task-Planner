@@ -3,19 +3,23 @@
     "id": 1,
     "username": "Charbel",
     "role": "Architect",
+    "shortDesc": "A creative builder known for massive structures and detailed bases.",
     "specialty": "Building massive structures",
     "skin": "charbel.png",
+
     "stats": {
       "blocksPlaced": 52430,
       "diamonds": 245,
       "deaths": 8,
       "mobsKilled": 320
     },
+
     "achievements": [
       "Master Builder",
       "Diamond Collector",
       "Village Protector"
     ],
+
     "funFact": "Can spend 5 hours building a house but forget to add a door.",
     "quote": "Never dig straight down."
   },
@@ -24,15 +28,19 @@
     "id": 2,
     "username": "Wilson",
     "role": "Warrior",
+    "shortDesc": "A fearless fighter who explores dangerous places and battles anything in sight.",
     "specialty": "Combat and exploration",
     "skin": "wilson.png",
+
     "stats": {
       "blocksPlaced": 12000,
       "diamonds": 180,
       "deaths": 42,
       "mobsKilled": 3420
     },
+
     "achievements": ["Monster Hunter", "Nether Explorer"],
+
     "funFact": "Starts fights he cannot finish.",
     "quote": "The sword solves everything."
   }
