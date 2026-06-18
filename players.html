@@ -118,26 +118,7 @@
           </div>
         </div>
         <div class="container-fluid px-3 py-5 shadow player-data">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-            <div class="col">
-              <div class="card p-2">
-                <img
-                  src="./images/steve face.jpg"
-                  class="card-img-top mx-auto"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">charbbieee</h5>
-                  <p class="card-text">
-                    A creative builder known for awesome structures and detailed
-                    bases.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <a class="card-link" onclick="showPlayer(1)">[ View More ]</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"></div>
         </div>
       </div>
     </div>
@@ -165,23 +146,38 @@
 
           <!-- Modal Body -->
           <div class="modal-body">
-            <div class="row">
+            <div class="row g-5 g-md-3">
               <!-- Player Image -->
-              <div class="col-md-4 text-center">
-                <img
-                  id="modalPlayerSkin"
-                  src=""
-                  class="img-fluid rounded"
-                  alt="Player Skin"
-                />
+              <div class="col-lg-4">
+                <div class="text-center">
+                  <img
+                    id="modalPlayerSkin"
+                    src=""
+                    class="img-fluid mx-auto"
+                    style="max-height: 137.2px"
+                    alt="Player Skin"
+                  />
 
-                <h4 class="mt-3" id="modalPlayerRole">Role</h4>
+                  <h4 class="mt-3 text-center" id="modalPlayerRole">Role</h4>
 
-                <p class="text-muted" id="modalPlayerSpecialty">Specialty</p>
+                  <p class="text-muted text-center" id="modalPlayerSpecialty">
+                    Specialty
+                  </p>
+                </div>
+
+                <h5>🤔 Fun Fact</h5>
+
+                <p id="modalFunFact">Fun fact goes here.</p>
+
+                <h5>💬 Quote</h5>
+
+                <blockquote class="blockquote ps-3">
+                  <p id="modalQuote">Player quote goes here.</p>
+                </blockquote>
               </div>
 
               <!-- Player Details -->
-              <div class="col-md-8">
+              <div class="col-lg-8">
                 <h5>📊 Statistics</h5>
 
                 <ul class="list-group mb-4">
@@ -215,29 +211,13 @@
                 <div id="modalAchievements">
                   <!-- Badges inserted here -->
                 </div>
-
-                <hr />
-
-                <h5>🤔 Fun Fact</h5>
-
-                <p id="modalFunFact">Fun fact goes here.</p>
-
-                <h5>💬 Quote</h5>
-
-                <blockquote class="blockquote">
-                  <p id="modalQuote">Player quote goes here.</p>
-                </blockquote>
               </div>
             </div>
           </div>
 
           <!-- Footer -->
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn" data-bs-dismiss="modal">
               Close
             </button>
           </div>

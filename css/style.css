@@ -380,4 +380,50 @@
   font-family: var(--fnt-body);
 }
 
+.modal-dialog .modal-content {
+  border-radius: 0;
+  border-width: 4px;
+  border-color: var(--clr-surface-light);
+  background: var(--clr-surface);
+}
+.modal-dialog .modal-content .modal-header {
+  border-width: 4px;
+  border-color: var(--clr-surface-light);
+}
+.modal-dialog .modal-content .modal-header .modal-title {
+  font-family: var(--fnt-body);
+}
+.modal-dialog .modal-content .modal-body {
+  font-family: var(--fnt-body);
+  overflow-y: auto;
+}
+.modal-dialog .modal-content .modal-body .list-group {
+  border-radius: 0;
+}
+.modal-dialog .modal-content .modal-body .list-group-item {
+  border-width: 3px;
+  border-color: var(--clr-surface-light);
+  border-bottom: 0;
+}
+.modal-dialog .modal-content .modal-body .list-group-item:last-child {
+  border-bottom-width: 3px;
+  border-bottom-color: var(--clr-surface-light);
+  border-bottom-style: solid;
+}
+.modal-dialog .modal-content .modal-footer {
+  border-width: 4px;
+  border-color: var(--clr-surface-light);
+}
+.modal-dialog .modal-content .modal-footer .btn {
+  background: var(--clr-secondary);
+  border: 3px solid color-mix(in srgb, var(--clr-secondary) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-secondary) 75%, black) !important;
+  font-family: var(--fnt-minecraft);
+  border-radius: 0;
+  color: var(--clr-text-light);
+}
+.modal-dialog .modal-content .modal-footer .btn:hover {
+  background-color: color-mix(in srgb, var(--clr-secondary) 75%, black);
+}
+
 /*# sourceMappingURL=style.css.map */

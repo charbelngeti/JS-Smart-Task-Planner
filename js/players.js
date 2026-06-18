@@ -61,6 +61,19 @@ function showPlayer(id) {
   document.getElementById("modalMobs").innerHTML = mobsKilled;
   document.getElementById("modalQuote").innerHTML = quote;
   document.getElementById("modalFunFact").innerHTML = funFact;
+  document.getElementById("modalAchievements").innerHTML = `
+  <div class="list-group">
+    ${achievements
+      .map(
+        (achievement) => `
+      <div class="list-group-item">
+        ${achievement}
+      </div>
+    `,
+      )
+      .join("")}
+  </div>
+`;
 
   const modal = new bootstrap.Modal(document.getElementById("playerModal"));
   modal.show();
