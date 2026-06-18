@@ -9,6 +9,22 @@ fetch("../src/data/players.json")
   })
   .then(() => {
     renderPlayerCards(players);
+
+    const leaderboard = document.querySelector(".container-fluid .table tbody");
+    console.log(leaderboard);
+
+    let count = 1;
+    players.forEach((player) => {
+      leaderboard.innerHTML += `
+        <tr>
+          <th scope="row">${count}</th>
+          <td>${player.username}</td>
+          <td>${player.role}</td>
+          <td>${player.achievements[1]}</td>
+        </tr>
+      `;
+      ++count;
+    });
   });
 
 function filterPlayerList() {}
@@ -104,8 +120,13 @@ function filterPlayerList() {
   if (sortValue === "descending") {
     results.sort((a, b) => b.username.localeCompare(a.username));
   }
-
-  renderPlayerCards(results);
+  if (results == []) {
+    document.querySelector(".player-data .row").innerHTML =
+      "<h5>Player not found.</h5>";
+    console.log("no");
+  } else {
+    renderPlayerCards(results);
+  }
 }
 
 searchBox.addEventListener("input", filterPlayerList);

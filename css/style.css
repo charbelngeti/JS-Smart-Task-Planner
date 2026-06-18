@@ -379,6 +379,11 @@
   cursor: pointer;
   font-family: var(--fnt-body);
 }
+.container-fluid.players .player-section .leaderboard .table {
+  border-width: 3px;
+  border-color: var(--clr-text-muted);
+  border-style: solid;
+}
 
 .modal-dialog .modal-content {
   border-radius: 0;
