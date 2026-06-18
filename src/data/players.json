@@ -8,10 +8,10 @@
     "skin": "charbel.png",
 
     "stats": {
-      "blocksPlaced": 52430,
-      "diamonds": 245,
-      "deaths": 8,
-      "mobsKilled": 320
+      "blocksPlaced": 68855,
+      "diamonds": 528,
+      "deaths": 21,
+      "mobsKilled": 17000
     },
 
     "achievements": [
@@ -26,22 +26,22 @@
 
   {
     "id": 2,
-    "username": "Wilson",
-    "role": "Warrior",
-    "shortDesc": "A fearless fighter who explores dangerous places and battles anything in sight.",
-    "specialty": "Combat and exploration",
+    "username": "jeginaaa",
+    "role": "Tamer",
+    "shortDesc": "An animal whisperer who can't resist bringing a home a new animal. Parrots, dogs, cats, fish, horses, donkeys, you name it!",
+    "specialty": "Animal taming and house decoration",
     "skin": "wilson.png",
 
     "stats": {
-      "blocksPlaced": 12000,
-      "diamonds": 180,
-      "deaths": 42,
-      "mobsKilled": 3420
+      "blocksPlaced": 4697,
+      "diamonds": 17,
+      "deaths": 14,
+      "mobsKilled": 264
     },
 
     "achievements": ["Monster Hunter", "Nether Explorer"],
 
-    "funFact": "Starts fights he cannot finish.",
-    "quote": "The sword solves everything."
+    "funFact": "Can tame any animal on the server but will fail to swim up water.",
+    "quote": "Wait up there, I'm coming (tries to swim up water)."
   }
 ]

@@ -376,6 +376,8 @@
 .container-fluid.players .player-section .player-data .card .card-footer .card-link {
   text-decoration: none;
   color: var(--clr-primary);
+  cursor: pointer;
+  font-family: var(--fnt-body);
 }
 
 /*# sourceMappingURL=style.css.map */
