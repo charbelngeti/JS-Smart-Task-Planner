@@ -319,6 +319,7 @@
   background: color-mix(in srgb, var(--clr-background) 97%, black);
   border-bottom: 1px solid var(--clr-text-muted);
   border-left: 1px solid var(--clr-text-muted);
+  font-family: var(--fnt-body);
 }
 .container-fluid.about .about-section .list-card {
   border-radius: 0;
@@ -383,6 +384,47 @@
   border-width: 3px;
   border-color: var(--clr-text-muted);
   border-style: solid;
+}
+.container-fluid.join-form .card {
+  border-radius: 0;
+  border-width: 3px;
+  border-color: var(--clr-accent);
+  border-style: solid;
+}
+.container-fluid.join-form .card-header {
+  background: var(--clr-accent);
+  border-radius: 0;
+  font-weight: bold;
+}
+.container-fluid.join-form .card-body {
+  background: var(--clr-background);
+}
+.container-fluid.join-form .card-body input,
+.container-fluid.join-form .card-body select,
+.container-fluid.join-form .card-body button,
+.container-fluid.join-form .card-body textarea,
+.container-fluid.join-form .card-body label {
+  border-radius: 0;
+  font-family: var(--fnt-body);
+}
+.container-fluid.join-form .card-body input,
+.container-fluid.join-form .card-body select,
+.container-fluid.join-form .card-body textarea {
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--clr-text-muted);
+  background: var(--clr-surface-light);
+}
+.container-fluid.join-form .card-body .btn {
+  background: var(--clr-accent);
+  border: 3px solid color-mix(in srgb, var(--clr-accent) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-accent) 75%, black) !important;
+  font-family: var(--fnt-minecraft);
+  border-radius: 0;
+  color: var(--clr-text-dark);
+}
+.container-fluid.join-form .card-body .btn:hover {
+  background: color-mix(in srgb, var(--clr-accent) 75%, black);
 }
 
 .modal-dialog .modal-content {
