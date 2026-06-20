@@ -385,6 +385,9 @@
   border-color: var(--clr-text-muted);
   border-style: solid;
 }
+.container-fluid.join-form .card:hover {
+  transform: none !important;
+}
 .container-fluid.join-form .card {
   border-radius: 0;
   border-width: 3px;

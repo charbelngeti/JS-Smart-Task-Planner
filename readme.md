@@ -2,7 +2,7 @@
 
 ## Overview
 
-Valora SMP is a Minecraft-themed community website created for a Web Development CAT II project. The website provides information about a Minecraft survival server, including player profiles, builds, achievements, server statistics, and a joining application system that uses Email.js.
+Valora SMP is a Minecraft-themed community website created for a Web Development CAT II project. The website provides information about a Minecraft survival server, including player profiles, builds, achievements, server statistics, and a joining application system that uses FormSpree.
 
 The goal of the project is to create an interactive and user-friendly website while demonstrating the use of HTML, CSS, JavaScript, and Bootstrap.
 
@@ -23,6 +23,7 @@ The goal of the project is to create an interactive and user-friendly website wh
 - CSS3
 - JavaScript (ES6)
 - Bootstrap 5
+- Formspree
 
 ## Project Structure
 
@@ -33,8 +34,7 @@ Valora-SMP/
 ├── about.html
 ├── players.html
 ├── builds.html
-├── map.html
-├── economy.html
+├── events.html
 ├── achievements.html
 ├── join.html
 │

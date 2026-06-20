@@ -8,10 +8,11 @@ fetch("../src/data/players.json")
     filteredPlayers = players;
   })
   .then(() => {
-    renderPlayerCards(players);
+    const container = document.querySelector(".player-data .row");
+
+    renderCards(players, container);
 
     const leaderboard = document.querySelector(".container-fluid .table tbody");
-    console.log(leaderboard);
 
     let count = 1;
     players.forEach((player) => {
@@ -26,35 +27,6 @@ fetch("../src/data/players.json")
       ++count;
     });
   });
-
-function filterPlayerList() {}
-
-function renderPlayerCards(data) {
-  const container = document.querySelector(".player-data .row");
-  container.innerHTML = "";
-
-  data.forEach((player) => {
-    container.innerHTML += `
-      <div class="col">
-        <div class="card p-2 h-100" onclick="showPlayer(${player.id})">
-          <img
-            src="../images/players/${player.skin}"
-            class="card-img-top mx-auto"
-          />
-          <div class="card-body">
-            <h5 class="card-title">${player.username}</h5>
-            <p class="card-text">
-              ${player.shortDesc}
-            </p>
-          </div>
-          <div class="card-footer">
-            <a class="card-link">[ View More ]</a>
-          </div>
-        </div>
-      </div>
-    `;
-  });
-}
 
 function showPlayer(id) {
   const player = players.find((p) => p.id === id);
@@ -102,32 +74,5 @@ function showPlayer(id) {
 const searchBox = document.getElementById("searchPlayer");
 const sortBox = document.getElementById("sortBox");
 
-function filterPlayerList() {
-  let searchValue = searchBox.value.toLowerCase();
-
-  let results = players.filter((player) =>
-    player.username.toLowerCase().includes(searchValue),
-  );
-
-  console.log(results);
-
-  let sortValue = sortBox.value;
-
-  if (sortValue === "ascending") {
-    results.sort((a, b) => a.username.localeCompare(b.username));
-  }
-
-  if (sortValue === "descending") {
-    results.sort((a, b) => b.username.localeCompare(a.username));
-  }
-  if (results == []) {
-    document.querySelector(".player-data .row").innerHTML =
-      "<h5>Player not found.</h5>";
-    console.log("no");
-  } else {
-    renderPlayerCards(results);
-  }
-}
-
-searchBox.addEventListener("input", filterPlayerList);
-sortBox.addEventListener("change", filterPlayerList);
+searchBox.addEventListener("input", filterCards(players, searchBox, sortBox));
+sortBox.addEventListener("change", filterCards(players, searchBox, searchBox));
