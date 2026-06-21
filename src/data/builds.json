@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "username": "charbbie's base",
+    "player": "charbbieee",
+    "category": "base",
+    "image": "charbbie base.jpg",
+    "desc": "A massive modern house overlooking the big river.",
+    "materials": ["Stone Bricks", "Spruce Wood", "Deepslate"],
+    "buildTime": "25 hours",
+    "difficulty": "Expert"
+  }
+]

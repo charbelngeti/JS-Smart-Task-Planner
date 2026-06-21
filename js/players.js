@@ -1,5 +1,6 @@
 let players = [];
 let filteredPlayers = [];
+const container = document.querySelector(".player-data .row");
 
 fetch("../src/data/players.json")
   .then((response) => response.json())
@@ -8,8 +9,6 @@ fetch("../src/data/players.json")
     filteredPlayers = players;
   })
   .then(() => {
-    const container = document.querySelector(".player-data .row");
-
     renderCards(players, container);
 
     const leaderboard = document.querySelector(".container-fluid .table tbody");
@@ -28,7 +27,7 @@ fetch("../src/data/players.json")
     });
   });
 
-function showPlayer(id) {
+function showModal(id) {
   const player = players.find((p) => p.id === id);
 
   const {
@@ -74,5 +73,11 @@ function showPlayer(id) {
 const searchBox = document.getElementById("searchPlayer");
 const sortBox = document.getElementById("sortBox");
 
-searchBox.addEventListener("input", filterCards(players, searchBox, sortBox));
-sortBox.addEventListener("change", filterCards(players, searchBox, searchBox));
+searchBox.addEventListener(
+  "input",
+  filterCards(players, searchBox, sortBox, container),
+);
+sortBox.addEventListener(
+  "change",
+  filterCards(players, searchBox, searchBox, container),
+);

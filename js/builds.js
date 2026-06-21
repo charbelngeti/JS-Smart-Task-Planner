@@ -1,0 +1,58 @@
+let builds = [];
+let filteredBuilds = [];
+
+fetch("../src/data/builds.json")
+  .then((response) => response.json())
+  .then((data) => {
+    {
+      builds = data;
+    }
+  })
+  .then(() => {
+    const container = document.querySelector(".player-data .row");
+    renderCards(builds, container);
+  });
+
+function showModal(id) {
+  const build = builds.find((b) => b.id === id);
+
+  const {
+    username,
+    player,
+    category,
+    image,
+    desc,
+    materials,
+    buildTime,
+    difficulty,
+  } = build;
+
+  document.getElementById("buildModalLabel").innerHTML = username;
+  document.getElementById("modalBuilder").innerHTML = player;
+  document.getElementById("modalCategory").innerHTML = category;
+  document.getElementById("modalBuildTime").innerHTML = buildTime;
+  document.getElementById("modalDifficulty").innerHTML = difficulty;
+  document.getElementById("modalDescription").innerHTML = desc;
+  document.getElementById("modalMaterials").innerHTML = `
+  <div class="list-group">
+    ${materials
+      .map(
+        (material) => `
+      <div class="list-group-item">
+        ${material}
+      </div>
+    `,
+      )
+      .join("")}
+  </div>
+`;
+
+  const modal = new bootstrap.Modal(document.getElementById("buildModal"));
+  modal.show();
+}
+
+const searchBox = document.getElementById("searchPlayer");
+const sortBox = document.getElementById("sortBox");
+
+searchBox.addEventListener("input", filterCards(builds, searchBox, sortBox));
+sortBox.addEventListener("change", filterCards(builds, searchBox, searchBox));
