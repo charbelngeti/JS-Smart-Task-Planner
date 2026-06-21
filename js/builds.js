@@ -1,6 +1,7 @@
 let builds = [];
 let filteredBuilds = [];
 
+const container = document.querySelector(".player-data .row");
 fetch("../src/data/builds.json")
   .then((response) => response.json())
   .then((data) => {
@@ -9,7 +10,6 @@ fetch("../src/data/builds.json")
     }
   })
   .then(() => {
-    const container = document.querySelector(".player-data .row");
     renderCards(builds, container);
   });
 
@@ -54,5 +54,9 @@ function showModal(id) {
 const searchBox = document.getElementById("searchPlayer");
 const sortBox = document.getElementById("sortBox");
 
-searchBox.addEventListener("input", filterCards(builds, searchBox, sortBox));
-sortBox.addEventListener("change", filterCards(builds, searchBox, searchBox));
+searchBox.addEventListener("input", () => {
+  filterCards(builds, searchBox, sortBox, container);
+});
+sortBox.addEventListener("change", () => {
+  filterCards(builds, searchBox, sortBox, container);
+});

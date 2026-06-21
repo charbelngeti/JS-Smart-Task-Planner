@@ -33,7 +33,6 @@ function filterCards(data, searchBox, sortBox, container) {
   let results = data.filter((item) =>
     item.username.toLowerCase().includes(searchValue),
   );
-  console.log(results);
 
   let sortValue = sortBox.value;
 
@@ -44,10 +43,8 @@ function filterCards(data, searchBox, sortBox, container) {
   if (sortValue === "descending") {
     results.sort((a, b) => b.username.localeCompare(a.username));
   }
-  if (results == []) {
-    document.querySelector(".player-data .row").innerHTML =
-      "<h5>Player not found.</h5>";
-    console.log("no");
+  if (results.length == 0) {
+    container.innerHTML = "<h5>Search not found.</h5>";
   } else {
     renderCards(results, container);
   }

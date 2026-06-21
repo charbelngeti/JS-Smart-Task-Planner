@@ -73,11 +73,9 @@ function showModal(id) {
 const searchBox = document.getElementById("searchPlayer");
 const sortBox = document.getElementById("sortBox");
 
-searchBox.addEventListener(
-  "input",
-  filterCards(players, searchBox, sortBox, container),
-);
-sortBox.addEventListener(
-  "change",
-  filterCards(players, searchBox, searchBox, container),
-);
+searchBox.addEventListener("input", () => {
+  filterCards(players, searchBox, sortBox, container);
+});
+sortBox.addEventListener("change", () => {
+  filterCards(players, searchBox, sortBox, container);
+});
