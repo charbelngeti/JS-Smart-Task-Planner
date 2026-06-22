@@ -354,6 +354,28 @@
 .container-fluid.players .player-section .search-box select:focus {
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--clr-primary) 55%, transparent);
 }
+.container-fluid.players .player-section .filter-box h3 {
+  font-family: var(--fnt-body);
+}
+.container-fluid.players .player-section .filter-box .btn {
+  background: var(--clr-secondary);
+  border: 3px solid color-mix(in srgb, var(--clr-secondary) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-secondary) 75%, black) !important;
+  font-family: var(--fnt-body);
+  border-radius: 0;
+  color: var(--clr-text-dark);
+}
+.container-fluid.players .player-section .filter-box .btn:hover {
+  background: color-mix(in srgb, var(--clr-secondary) 75%, black);
+}
+.container-fluid.players .player-section .filter-box .btn.active {
+  background: var(--clr-primary);
+  border: 3px solid color-mix(in srgb, var(--clr-primary) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-primary) 75%, black) !important;
+}
+.container-fluid.players .player-section .filter-box .btn.active:hover {
+  background: color-mix(in srgb, var(--clr-primary) 75%, black);
+}
 .container-fluid.players .player-section .player-data .card {
   transition: all 0.5s ease-out;
   border-radius: 0;
