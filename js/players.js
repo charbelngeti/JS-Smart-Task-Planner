@@ -18,7 +18,7 @@ fetch("../src/data/players.json")
       leaderboard.innerHTML += `
         <tr>
           <th scope="row">${count}</th>
-          <td>${player.username}</td>
+          <td>${player.name}</td>
           <td>${player.role}</td>
           <td>${player.achievements[1]}</td>
         </tr>
@@ -30,21 +30,14 @@ fetch("../src/data/players.json")
 function showModal(id) {
   const player = players.find((p) => p.id === id);
 
-  const {
-    username,
-    role,
-    specialty,
-    stats,
-    achievements,
-    skin,
-    quote,
-    funFact,
-  } = player;
+  const { name, role, specialty, stats, achievements, image, quote, funFact } =
+    player;
   const { blocksPlaced, diamonds, deaths, mobsKilled } = stats;
 
-  document.getElementById("playerModalLabel").innerHTML = username;
+  document.getElementById("playerModalLabel").innerHTML = name;
   document.getElementById("modalPlayerRole").innerHTML = role;
-  document.getElementById("modalPlayerSkin").src = `../images/steve\ face.jpg`;
+  document.getElementById("modalPlayerSkin").src =
+    `../images/game/players/${image}`;
   document.getElementById("modalPlayerSpecialty").innerHTML = specialty;
   document.getElementById("modalBlocks").innerHTML = blocksPlaced;
   document.getElementById("modalDiamonds").innerHTML = diamonds;

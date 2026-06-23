@@ -17,7 +17,7 @@ function showModal(id) {
   const build = builds.find((b) => b.id === id);
 
   const {
-    username,
+    username: name,
     player,
     category,
     image,
@@ -27,8 +27,10 @@ function showModal(id) {
     difficulty,
   } = build;
 
-  document.getElementById("buildModalLabel").innerHTML = username;
+  document.getElementById("buildModalLabel").innerHTML = name;
   document.getElementById("modalBuilder").innerHTML = player;
+  document.getElementById("modalBuildImage").src =
+    `../images/game/builds/${image}`;
   document.getElementById("modalCategory").innerHTML = category;
   document.getElementById("modalBuildTime").innerHTML = buildTime;
   document.getElementById("modalDifficulty").innerHTML = difficulty;

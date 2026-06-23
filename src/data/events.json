@@ -6,7 +6,7 @@
     "image": "nether-expedition.jpg",
     "status": "Upcoming",
     "date": "2026-07-12",
-    "description": "A dangerous journey into the Nether to search for ancient debris and rare resources.",
+    "shortDesc": "A dangerous journey into the Nether to search for ancient debris and rare resources.",
     "participants": 14,
     "prize": "32 Diamonds",
     "rules": [
@@ -23,7 +23,7 @@
     "image": "build-battle.jpg",
     "status": "Active",
     "date": "2026-06-28",
-    "description": "Players compete to create the most impressive build based on a mystery theme.",
+    "shortDesc": "Players compete to create the most impressive build based on a mystery theme.",
     "participants": 9,
     "prize": "Builder Trophy + 50 Diamonds",
     "rules": [
@@ -40,7 +40,7 @@
     "image": "dragon.jpg",
     "status": "Completed",
     "date": "2026-06-05",
-    "description": "A server-wide battle against the Ender Dragon with rewards for brave warriors.",
+    "shortDesc": "A server-wide battle against the Ender Dragon with rewards for brave warriors.",
     "participants": 16,
     "prize": "Dragon Egg",
     "rules": ["No respawn cheese", "Work as a team", "Everyone gets a reward"]
@@ -53,7 +53,7 @@
     "image": "diamond-rush.jpg",
     "status": "Upcoming",
     "date": "2026-08-01",
-    "description": "A mining competition where players race to collect the most diamonds.",
+    "shortDesc": "A mining competition where players race to collect the most diamonds.",
     "participants": 20,
     "prize": "100 Diamonds",
     "rules": [
@@ -70,7 +70,7 @@
     "image": "pvp-arena.jpg",
     "status": "Active",
     "date": "2026-06-25",
-    "description": "A tournament where the strongest fighters compete for server glory.",
+    "shortDesc": "A tournament where the strongest fighters compete for server glory.",
     "participants": 12,
     "prize": "Netherite Sword",
     "rules": [
@@ -87,7 +87,7 @@
     "image": "village.jpg",
     "status": "Completed",
     "date": "2026-05-20",
-    "description": "Players worked together to transform a ruined village into a thriving community.",
+    "shortDesc": "Players worked together to transform a ruined village into a thriving community.",
     "participants": 11,
     "prize": "Community Hero Badge",
     "rules": [
