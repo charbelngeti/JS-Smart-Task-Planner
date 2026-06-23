@@ -20,7 +20,7 @@ fetch("../src/data/players.json")
           <th scope="row">${count}</th>
           <td>${player.name}</td>
           <td>${player.role}</td>
-          <td>${player.achievements[1]}</td>
+          <td>${player.achievements[0]}</td>
         </tr>
       `;
       ++count;

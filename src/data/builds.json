@@ -1,13 +1,90 @@
 [
   {
     "id": 1,
-    "username": "charbbie's base",
+    "name": "charbbie's base",
     "player": "charbbieee",
     "category": "base",
-    "image": "charbbie base.jpg",
-    "desc": "A massive modern house overlooking the big river.",
+    "image": "charbbieee_base.png",
+    "shortDesc": "A massive modern house overlooking the big river.",
     "materials": ["Stone Bricks", "Spruce Wood", "Deepslate"],
     "buildTime": "25 hours",
     "difficulty": "Expert"
+  },
+  {
+    "id": 2,
+    "name": "jeginaaa's mega zoo",
+    "player": "jeginaaa",
+    "category": "farm",
+    "image": "jeginaaa_zoo.jpg",
+    "shortDesc": "A massive wildlife sanctuary containing every single tamable creature on the server. Includes a massive water elevator she refuses to use.",
+    "materials": ["Glass", "Oak Fences", "Moss Blocks", "Water"],
+    "buildTime": "18 hours",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 3,
+    "name": "DimpledDwarf's graveyard",
+    "player": "DimpledDwarf",
+    "category": "monument",
+    "image": "dimpled_graveyard.jpg",
+    "shortDesc": "A sprawling, scenic graveyard built entirely to commemorate the absurd amount of times they have respawned.",
+    "materials": ["Cobblestone", "Mossy Stone Bricks", "Soul Lanterns"],
+    "buildTime": "4 hours",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "name": "plainpixie's armory",
+    "player": "plainpixie",
+    "category": "utility",
+    "image": "pixie_armory.jpg",
+    "shortDesc": "A beautifully organized, heavily lit underground bunker packed with fully stocked adventure kits, shulker boxes, and potions for the group.",
+    "materials": ["Smooth Stone", "Iron Blocks", "Glowstone", "Chests"],
+    "buildTime": "12 hours",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "name": "LordMalcolm's quarry",
+    "player": "LordMalcolmII",
+    "category": "mine",
+    "image": "malcolm_quarry.jpg",
+    "shortDesc": "An aggressively large hole in the ground extending all the way to bedrock. Yielded almost no actual diamonds, but generated infinite dirt stacks.",
+    "materials": ["Dirt", "Coarse Dirt", "Torches", "Broken Picks"],
+    "buildTime": "30 hours",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 6,
+    "name": "Brautistic's emergency vault",
+    "player": "Brautistic",
+    "category": "base",
+    "image": "brautistic_vault.jpg",
+    "shortDesc": "A single hidden 2x2 room containing absolutely zero chests because everything valuable is carried directly in his inventory at all times.",
+    "materials": ["Obsidian", "Iron Doors", "Redstone Dust"],
+    "buildTime": "2 hours",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "name": "zephyr707's communal bedroom",
+    "player": "zephyr707",
+    "category": "monument",
+    "image": "zephyr_bed.jpg",
+    "shortDesc": "A massive public hotel structure containing 50 beds, none of which actually belong to zephyr707, but all of which they will sleep in anyway.",
+    "materials": ["White Wool", "Red Wool", "Stripped Oak Logs"],
+    "buildTime": "6 hours",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "name": "yihua's lava observation deck",
+    "player": "yihua.sun1",
+    "category": "utility",
+    "image": "yihua_lava.jpg",
+    "shortDesc": "A glass safety platform built directly over a massive lava lake down at minus coordinates, engineered specifically to stop accidental falling incidents.",
+    "materials": ["Tinted Glass", "Netherite Bars", "Cobblestone Slabs"],
+    "buildTime": "9 hours",
+    "difficulty": "Advanced"
   }
 ]

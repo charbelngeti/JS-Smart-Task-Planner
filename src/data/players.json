@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "username": "charbbieee",
+    "name": "charbbieee",
     "role": "Architect",
     "shortDesc": "A block architect who turns dirt, stone, and questionable amounts of free time into legendary builds.",
     "specialty": "Building massive structures",
-    "skin": "steve face.jpg",
+    "image": "charbbieee.jpg",
 
     "stats": {
       "blocksPlaced": 68855,
@@ -26,11 +26,11 @@
 
   {
     "id": 2,
-    "username": "jeginaaa",
+    "name": "jeginaaa",
     "role": "Tamer",
     "shortDesc": "An animal whisperer who can't resist bringing a home a new animal. Parrots, dogs, cats, fish, horses, donkeys, you name it!",
     "specialty": "Animal taming and house decoration",
-    "skin": "steve face.jpg",
+    "image": "jeginaaa.jpg",
 
     "stats": {
       "blocksPlaced": 4697,
@@ -43,5 +43,122 @@
 
     "funFact": "Can tame any animal on the server but will fail to swim up water.",
     "quote": "“Wait up there, I'm coming (tries to swim up water).”"
+  },
+  {
+    "id": 3,
+    "name": "DimpledDwarf",
+    "role": "Architect",
+    "shortDesc": "An adopted child who dies too often",
+    "specialty": "Dying in Minecraft",
+    "image": "dimpleddwarf.jpg",
+
+    "stats": {
+      "blocksPlaced": 3653,
+      "diamonds": 2,
+      "deaths": 27,
+      "mobsKilled": 67
+    },
+
+    "achievements": ["Master in Dying"],
+
+    "funFact": "DimpledDwarf has a unique ability to respawn quickly after dying in Minecraft, making them a resilient player despite their frequent deaths.",
+    "quote": "I may die often, but I always come back stronger!"
+  },
+  {
+    "id": 4,
+    "name": "plainpixie",
+    "role": "Adventurer",
+    "shortDesc": "Mother of the group making sure everyone jasxwhat they need before an adventure.",
+    "specialty": "getting stuff ready for adventure",
+    "image": "plainpixie.jpg",
+
+    "stats": {
+      "blocksPlaced": 39329,
+      "diamonds": 117,
+      "deaths": 25,
+      "mobsKilled": 6045
+    },
+
+    "achievements": ["Master Sniper", "Redstone lover", "Acquire hardware "],
+
+    "funFact": " wants to go ming l mining but is afraidof the dark.",
+    "quote": "charbie needs to face the warden."
+  },
+  {
+    "id": 5,
+    "name": "LordMalcolmII",
+    "role": "Miner",
+    "shortDesc": "An explorer with a huge love for dying opportunities ",
+    "specialty": "Locating large mines",
+    "image": "lordmalcolmiii.jpg",
+
+    "stats": {
+      "blocksPlaced": 122430,
+      "diamonds": 45,
+      "deaths": 56,
+      "mobsKilled": 569
+    },
+
+    "achievements": ["Take Aim", "Dirt Collector", "Mob Slayer"],
+
+    "funFact": "Goes mining without mining and comes back with dirt",
+    "quote": "Never say never to mining"
+  },
+  {
+    "id": 6,
+    "name": "Brautistic",
+    "role": "Miner",
+    "shortDesc": "Goes mining and loses everything just to go mining again",
+    "specialty": "Collecting LordMalcom’s items after he dies",
+    "image": "brautistic.jpg",
+
+    "stats": {
+      "blocksPlaced": 17382,
+      "diamonds": 170,
+      "deaths": 12,
+      "mobsKilled": 370
+    },
+
+    "achievements": ["Getting an Upgrade", "Sniper Duel", "DIAMONDS!"],
+
+    "funFact": "Brautistic barely even has a chest, all his valuables are in his inventory.",
+    "quote": "You should've seen my last hunger games"
+  },
+  {
+    "id": 7,
+    "name": "zephyr707",
+    "role": "Whatever you want me to be, I'll be it",
+    "shortDesc": "Sleeps on other people's beds",
+    "specialty": "Crashing out",
+    "image": "zephyr707.png",
+
+    "stats": {
+      "blocksPlaced": 5345,
+      "diamonds": 1,
+      "deaths": 12,
+      "mobsKilled": 3
+    },
+
+    "achievements": ["It's all about the memories, not the accolades"],
+
+    "funFact": "zephyr707 eats raw chicken",
+    "quote": "Bed is a communal item"
+  },
+  {
+    "id": 8,
+    "name": "yihua.sun1",
+    "role": "Professional distraction",
+    "shortDesc": "Accidentally falls into lava holes",
+    "specialty": "Hoarding dirt blocks",
+    "image": "yihuasun1.jpg",
+    "stats": {
+      "blocksPlaced": 892,
+      "diamonds": 47,
+      "deaths": 104,
+      "mobsKilled": 612
+    },
+    "achievements": ["Survived 5 minutes without hitting a teammate"],
+    "funFact": "yihua.sun1 forgets to eat and starves in safe zones",
+    "quote": "If it fits in my inventory, it belongs to me"
   }
 ]

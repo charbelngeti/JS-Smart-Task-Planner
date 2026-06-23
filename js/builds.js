@@ -29,8 +29,7 @@ function showModal(id) {
 
   document.getElementById("buildModalLabel").innerHTML = name;
   document.getElementById("modalBuilder").innerHTML = player;
-  document.getElementById("modalBuildImage").src =
-    `../images/game/builds/${image}`;
+  document.getElementById("modalBuildImage").src = `../images/game/${image}`;
   document.getElementById("modalCategory").innerHTML = category;
   document.getElementById("modalBuildTime").innerHTML = buildTime;
   document.getElementById("modalDifficulty").innerHTML = difficulty;
