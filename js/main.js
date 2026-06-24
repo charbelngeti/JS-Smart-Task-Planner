@@ -49,3 +49,22 @@ function filterCards(data, searchBox, sortBox, container) {
     renderCards(results, container);
   }
 }
+
+const darkModeToggle = document.getElementById("darkModeToggle");
+const savedTheme = localStorage.getItem("current-theme");
+
+if (savedTheme) {
+  document.documentElement.setAttribute("data-bs-theme", savedTheme);
+  document.documentElement.classList.add(savedTheme);
+  darkModeToggle.textContent = savedTheme === "dark" ? "🌞" : "🌚";
+}
+
+darkModeToggle.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-bs-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-bs-theme", newTheme);
+  document.documentElement.classList.remove(currentTheme);
+  document.documentElement.classList.add(newTheme);
+  localStorage.setItem("current-theme", newTheme);
+  darkModeToggle.textContent = newTheme === "dark" ? "🌞" : "🌚";
+});

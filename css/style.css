@@ -65,10 +65,6 @@
 }
 .navbar .container-fluid {
   flex-direction: row;
-  justify-content: space-between !important;
-}
-.navbar .container-fluid .wr {
-  width: 100%;
 }
 .navbar .navbar-collapse {
   float: right;
