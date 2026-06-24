@@ -36,8 +36,7 @@ function showModal(id) {
 
   document.getElementById("playerModalLabel").innerHTML = name;
   document.getElementById("modalPlayerRole").innerHTML = role;
-  document.getElementById("modalPlayerSkin").src =
-    `../images/game/players/${image}`;
+  document.getElementById("modalPlayerSkin").src = `../images/game/${image}`;
   document.getElementById("modalPlayerSpecialty").innerHTML = specialty;
   document.getElementById("modalBlocks").innerHTML = blocksPlaced;
   document.getElementById("modalDiamonds").innerHTML = diamonds;

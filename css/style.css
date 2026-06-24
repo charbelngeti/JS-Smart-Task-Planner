@@ -358,15 +358,15 @@
   font-family: var(--fnt-body);
 }
 .container-fluid.players .player-section .filter-box .btn {
-  background: var(--clr-secondary);
-  border: 3px solid color-mix(in srgb, var(--clr-secondary) 50%, black);
-  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-secondary) 75%, black) !important;
+  background: var(--clr-text-muted);
+  border: 3px solid color-mix(in srgb, var(--clr-text-muted) 50%, black);
+  box-shadow: inset 5px -5px 1px color-mix(in srgb, var(--clr-text-muted) 75%, black) !important;
   font-family: var(--fnt-body);
   border-radius: 0;
   color: var(--clr-text-dark);
 }
 .container-fluid.players .player-section .filter-box .btn:hover {
-  background: color-mix(in srgb, var(--clr-secondary) 75%, black);
+  background: color-mix(in srgb, var(--clr-text-muted) 75%, black);
 }
 .container-fluid.players .player-section .filter-box .btn.active {
   background: var(--clr-primary);
@@ -386,7 +386,7 @@
   box-shadow: 0 5px 20px var(--clr-primary);
 }
 .container-fluid.players .player-section .player-data .card .card-img-top {
-  height: 150px;
+  height: 150px !important;
   width: max-content;
   border-radius: 0;
 }
