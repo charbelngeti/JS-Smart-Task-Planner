@@ -68,3 +68,9 @@ darkModeToggle.addEventListener("click", () => {
   localStorage.setItem("current-theme", newTheme);
   darkModeToggle.textContent = newTheme === "dark" ? "🌞" : "🌚";
 });
+
+const copyServerLinkBtn = document.querySelector("#copyServerLink");
+
+copyServerLinkBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText("plainpixie.aternos.me");
+});
