@@ -69,8 +69,25 @@ darkModeToggle.addEventListener("click", () => {
   darkModeToggle.textContent = newTheme === "dark" ? "🌞" : "🌚";
 });
 
-const copyServerLinkBtn = document.querySelector("#copyServerLink");
+document.addEventListener("DOMContentLoaded", function () {
+  const copyServerLinkBtn = document.querySelector("#tooltipBtn");
+  if (copyServerLinkBtn) {
+    const tooltip = new bootstrap.Tooltip(copyServerLinkBtn, {
+      title: "Link Copied!",
+      trigger: "manual",
+      placement: "top",
+    });
 
-copyServerLinkBtn.addEventListener("click", () => {
-  navigator.clipboard.writeText("plainpixie.aternos.me");
+    let hideTimeout;
+
+    copyServerLinkBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText("plainpixie.aternos.me");
+
+      tooltip.show();
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        tooltip.hide();
+      }, 2000);
+    });
+  }
 });
