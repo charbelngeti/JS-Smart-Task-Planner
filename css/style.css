@@ -145,7 +145,6 @@
 }
 .container-fluid.landing .server-info .card .card-body .card-text .link {
   text-decoration: underline;
-  cursor: pointer;
 }
 .container-fluid.landing .server-info .card .card-body .card-link {
   color: var(--clr-secondary);
