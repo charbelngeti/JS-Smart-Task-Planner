@@ -41,6 +41,10 @@
   --fnt-body: Roboto Mono;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark {
   --clr-background: #101010;
   --clr-surface: #1c1c1c;
@@ -495,6 +499,15 @@
 }
 .modal-dialog .modal-content .modal-footer .btn:hover {
   background-color: color-mix(in srgb, var(--clr-secondary) 75%, black);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
