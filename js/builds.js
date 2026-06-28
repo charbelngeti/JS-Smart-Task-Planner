@@ -21,7 +21,7 @@ function showModal(id) {
     player,
     category,
     image,
-    desc,
+    shortDesc,
     materials,
     buildTime,
     difficulty,
@@ -33,7 +33,7 @@ function showModal(id) {
   document.getElementById("modalCategory").innerHTML = category;
   document.getElementById("modalBuildTime").innerHTML = buildTime;
   document.getElementById("modalDifficulty").innerHTML = difficulty;
-  document.getElementById("modalDescription").innerHTML = desc;
+  document.getElementById("modalDescription").innerHTML = shortDesc;
   document.getElementById("modalMaterials").innerHTML = `
   <div class="list-group">
     ${materials
